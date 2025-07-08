@@ -1,0 +1,152 @@
+/* Font base setup */
+.open-sans-normal {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header section */
+  .head {
+    background-color: #FFF8F3;
+    background-image: url('../images/developer.png'), url('../images/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    padding: 50px 200px;
+  }
+  
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-title {
+    font-size: 45px;
+    font-weight: 800;
+    color: #000;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #474747;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #FD6E0A;
+  }
+  
+  .text-prem {
+    color: #FD6E0A;
+  }
+  
+  /* Banner section */
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-top: 80px;
+  }
+  
+  .banner-cont {
+    max-width: 580px;
+  }
+  
+  .ban_gret {
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .ban_title {
+    font-size: 64px;
+    font-weight: 800;
+    margin: 10px 0;
+    color: #111;
+  }
+  
+  .banner-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .btn-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Button styling */
+  .btn_hire {
+    background-color: #FD6E0A;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn_hire:hover {
+    background-color: #e85d00;
+  }
+  
+  .btn_hire.outline {
+    background-color: transparent;
+    color: #FD6E0A;
+    border: 2px solid #FD6E0A;
+  }
+  
+  .btn_hire.outline:hover {
+    background-color: #FD6E0A;
+    color: white;
+  }
+  
+  /* Image */
+  .ban_proPic {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .head {
+      padding: 30px 50px;
+    }
+  
+    .banner {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  
+    .nav-links {
+      gap: 20px;
+    }
+  
+    .ban_title {
+      font-size: 48px;
+    }
+  
+    .ban_proPic {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  
