@@ -14,7 +14,13 @@
     background-image: url('../images/developer.png'), url('../images/header_bg.png');
     background-repeat: no-repeat;
     background-position: top left, bottom right;
-    padding: 50px 200px;
+    padding: 40px 200px;
+   
+  }
+  .text-center {
+    text-align: center;
+    padding-bottom: 30px;
+
   }
   
   /* Navigation */
@@ -124,29 +130,162 @@
     max-width: 100%;
     height: auto;
   }
+
+.section-title{
+  font-size: 35px;
+  font-weight: bold;
+  color: #181818;
+  margin: 20px;
+}
+
+.secondary-bg{
+  background-color:#FFF8F3;
+}
+.section-text{
+  font-size: 18px;
+  /* color: #757575; */
+  border-radius: 10px;
   
-  /* Responsive Design */
-  @media (max-width: 992px) {
-    .head {
-      padding: 30px 50px;
-    }
+}
+
+.main1{
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.about{
+  border-radius: 10px;
+  padding: 130px 150px;
+  text-align: center;
   
-    .banner {
-      flex-direction: column-reverse;
-      text-align: center;
-    }
-  
-    .nav-links {
-      gap: 20px;
-    }
-  
-    .ban_title {
-      font-size: 48px;
-    }
-  
-    .ban_proPic {
-      width: 100%;
-      max-width: 400px;
-    }
-  }
-  
+} 
+.item-description{
+  font-weight: 600;
+}
+item-title
+.about-item{
+  display: flex;
+  justify-content: space-around;
+}
+.about-items{
+  display: flex;
+  justify-content: space-around;
+}
+.skillset{
+  display: flex;
+  justify-content: center;
+  /* //flex-wrap: wrap */
+
+}
+.skill{
+  padding: 32px;
+  box-shadow: 0px 6px 50px 0px rgba(0,0,0,0.06);
+  gap: 24px;
+}
+
+.resume {
+  background-color: #ffffff; /* White background */
+  padding: 100px 150px;
+  border-radius: 10px;
+  /* box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.05); Optional subtle shadow */
+}
+
+
+.resume-contain {
+  display: flex;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.resume-column {
+  flex: 1;
+}
+
+.resume-column-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #474747;
+}
+
+.experience {
+  margin-bottom: 40px;
+}
+
+.experience-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #181818;
+}
+
+.experience-sub-title {
+  font-size: 16px;
+  color: #757575;
+  margin-bottom: 10px;
+}
+
+.experience-description {
+  font-size: 16px;
+  color: #757575;
+  line-height: 1.6;
+}
+
+.resume hr {
+  border: none;
+  border-top: 1px solid #E0E0E0;
+  margin: 30px 0;
+}
+
+
+/* footer  */
+footer {
+  padding: 130px 230px;
+  display: flex;
+  gap: 40px;
+  background-color: #FFF8F3;
+}
+
+.footer-colum {
+  width: 50%;
+}
+
+.footer-colum form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-colum input[type="text"],
+.footer-colum input[type="email"],
+.footer-colum textarea {
+  height: 50px;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 100%;
+  resize: vertical;
+}
+
+.footer-colum textarea {
+  height: 120px;
+}
+
+.footer-colum input[type="submit"] {
+  height: 50px;
+  background-color: #FD6E0A;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.footer-colum input[type="submit"]:hover {
+  background-color: #e85d00;
+}
